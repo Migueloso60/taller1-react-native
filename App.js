@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import ListaContador from './components/ListaContador';
+import Greeting from './components/Greeting';
+import ToggleText from './components/ToggleText';
 
 export default function App() {
   
@@ -19,8 +21,8 @@ export default function App() {
   return (
     <View style={styles.container}>
     <SafeAreaView style={styles.safeArea}>
-      <ListaContador />
-      {/* <ListaContador /> */}
+      <Greeting name="luis miguel"/>
+      <ToggleText/>
     </SafeAreaView>
     </View>
   );
